@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+/* Nav Bar */
+
+nav {
+  width: 300px;
+  margin: 0;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #fff;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.heading {
+  padding: 0.01em 16px;
+}
+
+h3 b {
+  font-size: 24px;
+}
+
+.heading h3 {
+  margin: 10px 0;
+  padding: 64px 0;
+  font-weight: 400;
+}
+
+a {
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  color: inherit;
+  background-color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+  background-color: #fff;
+}
+
+/* Main Content */
+
+.main__content {
+  margin: 0 40px 0 340px;
+}
+
+/* Home */
+
+.top {
+  margin: 80px 0 0 0;
+}
+
+.home__heading b {
+  font-size: 64px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+/* Showcase */
+
+.showcase b {
+    color: #f44336;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+hr {
+    width: 50px;
+    border: 5px solid red;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.gallery__container {
+    margin: 0 -16px;
+    padding: 0 8px;
+  }
+  
+  .side {
+    width: 50%;
+    float: left;
+    padding: 0 8px;
+  }
+  
+  .side img {
+    margin-bottom: 12px;
+    vertical-align: middle;
+    width: 100%;
+  }
