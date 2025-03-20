@@ -239,7 +239,7 @@ hr {
   font-weight: 400;
 }
 
-#modal {
+#popup {
   z-index: 3;
   position: fixed;
   left: 0;
@@ -251,7 +251,7 @@ hr {
   background-color: #000 !important;
 }
 
-#modal span {
+#popup span {
   border: none;
   display: inline-block;
   padding: 8px 16px;
@@ -263,7 +263,7 @@ hr {
   white-space: nowrap;
 }
 
-#modal div {
+#popup div {
   background-color: transparent !important;
   padding: 64px 0;
   text-align: center !important;
@@ -275,14 +275,14 @@ hr {
   outline: 0;
 }
 
-#modal div img {
+#popup div img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
   border-style: none;
 }
 
-#modal div p {
+#popup div p {
   text-align: center !important;
   color: white;
   font-size: 16px;

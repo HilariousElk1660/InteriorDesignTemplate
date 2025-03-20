@@ -1,6 +1,10 @@
 function fullscreen(element) {
-  document.getElementById("img1").src = element.src;
-  document.getElementById("modal").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+  document.getElementById("img").src = element.src;
+  document.getElementById("popup").style.display = "block";
+  let caption = document.getElementById("sub__heading");
+  if (element.alt) {
+    caption.innerHTML = element.alt;
+  } else {
+    caption.innerHTML = "No caption provided";
+  }
 }
