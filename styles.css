@@ -197,6 +197,10 @@ hr {
   text-align: center;
 }
 
+.price__side li:last-of-type {
+  border-bottom: none;
+}
+
 .list__button {
   padding: 24px 16px !important;
   border-bottom: none;
@@ -287,4 +291,48 @@ hr {
   color: white;
   font-size: 16px;
   padding: 16px 0;
+}
+
+#contact form div {
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+#contact form div input {
+  border: 1px solid #ccc !important;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  font: inherit;
+}
+
+.message__button {
+  padding: 12px 24px;
+  margin: 0 0 16px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font: inherit;
+}
+
+.footer {
+  margin:75px 0 0;
+  padding: 32px 58px 32px 0;
+  background-color: #ccc;
+}
+
+.footer a {
+  display: inline-block;
+  color: inherit;
+  background-color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer p {
+  float: right;
+  margin: 16px 0;
+  font-size: 16px;
 }
