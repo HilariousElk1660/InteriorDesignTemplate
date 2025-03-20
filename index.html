@@ -1,71 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interior Design</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
-    />
-  </head>
-  <body>
-    <nav>
-      <br />
-      <div class="heading">
-        <h3>
-          <b>Company<br />Name</b>
-        </h3>
-      </div>
-      <div class="nav__links">
-        <a href="#">Home</a>
-        <a href="#showcase">Showcase</a>
-        <a href="#services">Services</a>
-        <a href="#designers">Designers</a>
-        <a href="#packages">Packages</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-    <div class="main__content">
-      <div class="top center__text" id="showcase">
-        <h1 class="home__heading"><b>Interior Design</b></h1>
-        <h1 class="showcase red__text"><b>Showcase.</b></h1>
-        <hr />
-      </div>
-      <div class="gallery__container">
-        <div class="side">
-          <img src="./Images/kitchenconcrete.jpg" alt="" />
-          <img src="./Images/livingroom.jpg" alt="" />
-          <img src="./Images/diningroom.jpg" alt="" />
-        </div>
 
-        <div class="side">
-          <img src="./Images/atrium.jpg" alt="" />
-          <img src="./Images/bedroom.jpg" alt="" />
-          <img src="./Images/livingroom2.jpg" alt="" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interior Design</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+</head>
+
+<body>
+  <nav>
+    <br />
+    <div class="heading">
+      <h3>
+        <b>Company<br />Name</b>
+      </h3>
+    </div>
+    <div class="nav__links">
+      <a href="#">Home</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#services">Services</a>
+      <a href="#designers">Designers</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div class="main__content">
+    <div class="top center__text" id="showcase">
+      <h1 class="home__heading"><b>Interior Design</b></h1>
+      <h1 class="showcase red__text"><b>Showcase.</b></h1>
+      <hr />
+    </div>
+    <div class="gallery__container">
+      <div class="side">
+        <img src="./Images/kitchenconcrete.jpg" onclick="fullscreen(this)" alt="Concrete meets bricks" />
+        <img src="./Images/livingroom.jpg" onclick="fullscreen(this)" alt="Light, white and tight scandinavian design" />
+        <img src="./Images/diningroom.jpg" onclick="fullscreen(this)" alt="White walls with designer chairs" />
       </div>
-      <div id="services" class="center__text" style="margin: 75px 0 0">
-        <h1 class="services red__text" ><b>Services.</b></h1>
-        <hr>
-        <p class="p__styles">We are a interior design service that focus on what's best for your home and what's best for you!</p>
-        <p class="p__styles">Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+
+      <div class="side">
+        <img src="./Images/atrium.jpg" alt="Windows for the atrium" />
+        <img src="./Images/bedroom.jpg" alt="Bedroom and office in one space" />
+        <img src="./Images/livingroom2.jpg" alt="Scandinavian design" />
+      </div>
+    </div>
+    <div id="modal" class="" style="padding-top: 0px; display: none;" onclick="this.style.display='none'">
+      <span class="">×</span>
+      <div class="">
+        <img id="img1" class="" src="https://www.w3schools.com/w3images/kitchenconcrete.jpg">
+        <p id="caption">Concrete meets bricks</p>
+      </div>
+    </div>
+    <div id="services" class="center__text" style="margin: 75px 0 0">
+      <h1 class="services red__text"><b>Services.</b></h1>
+      <hr>
+      <p class="p__styles">We are a interior design service that focus on what's best for your home and what's best for
+        you!</p>
+      <p class="p__styles">Some text about our services - what we do and what we offer. We are lorem ipsum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+        elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+      </p>
     </div>
     <div id="designers" class="center__text" style="margin: 75px 0 0">
-      <h1 class="services red__text" ><b>Designers.</b></h1>
+      <h1 class="services red__text"><b>Designers.</b></h1>
       <hr>
       <p class="p__styles">The best team in the world.</p>
-      <p class="p__styles">We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.    
-        </p>
+      <p class="p__styles">We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+        elit, sed do eiusmod tempor
+        incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
       <p class="p__styles"><b>Our designers are thoughtfully chosen:</b></p>
-      
-  </div>
+    </div>
+    <div class="the__team center__text" style="padding: 0 8px !important;">
+      <div class="container">
+        <div class="john__doe">
+          <img src="./Images/team2.jpg" alt="">
+          <div class="content">
+            <h3>John Doe</h3>
+            <p>CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="jane__doe">
+          <img src="./Images/team1.jpg" alt="">
+          <div class="content">
+            <h3>Jane Doe</h3>
+            <p>CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="mike__ross">
+          <img src="./Images/team3.jpg" alt="">
+          <div class="content">
+            <h3>Mike Ross</h3>
+            <p>CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="packages center__text" id="packages" style="margin: 75px 0 0">
+      <h1 class="services red__text"><b>Packages.</b></h1>
+      <hr>
+      <p class="p__styles">Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+    </div>
+    <div class="price__list__container">
+      <div class="side-1">
+        <ul class="price__side">
+          <li class="price__items__heading">Basic</li>
+          <li class="price__items">Floorplanning</li>
+          <li class="price__items">10 hours support</li>
+          <li class="price__items">Photography</li>
+          <li class="price__items">20% furniture discount</li>
+          <li class="price__items">Good deals</li>
+          <li class="price__items">
+            <h2>$ 199</h2>
+            <span class="p_m">per month</span>
+          </li>
+          <li class="price__items list__button">
+            <button class="button__sign__up">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-1">
+        <ul class="price__side">
+          <li class="price__items__heading red">Pro</li>
+          <li class="price__items">Floorplanning</li>
+          <li class="price__items">50 hours support</li>
+          <li class="price__items">Photography</li>
+          <li class="price__items">50% furniture discount</li>
+          <li class="price__items">GREAT deals</li>
+          <li class="price__items">
+            <h2>$ 249</h2>
+            <span class="p_m">per month</span>
+          </li>
+          <li class="price__items list__button">
+            <button class="button__sign__up red">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
